@@ -1,34 +1,19 @@
 package models;
 
 public class Disciplina {
-    private String nomeDisciplina;
+    private String nome;
     private int cargaHoraria;
     private Professor professor;
 
-    public Disciplina(String nomeDisciplina, int cargaHoraria, Professor professor) {
-        this.nomeDisciplina = nomeDisciplina;
+    public Disciplina(String nome, int cargaHoraria, Professor professor) {
+        this.nome = nome;
         this.cargaHoraria = cargaHoraria;
         this.professor = professor;
     }
 
-    public String getNomeDisciplina() {
-        return nomeDisciplina;
-    }
-
-    public int getCargaHoraria() {
-        return cargaHoraria;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
-    @Override
-    public String toString() {
-        return "Disciplina{" +
-                "nomeDisciplina='" + nomeDisciplina + '\'' +
-                ", cargaHoraria=" + cargaHoraria +
-                ", professor=" + professor +
-                '}';
+    public void exibirDetalhes() {
+        System.out.println("Disciplina: " + nome);
+        System.out.println("Carga Horária: " + cargaHoraria + " horas");
+        System.out.println("Professor Responsável: " + professor.getNomeProfessor());
     }
 }

@@ -24,8 +24,12 @@ public class Main {
         escola.adicionarProfessor(professor2);
 
         escola.listarAlunos();
+        System.out.println("----------------------------------------------------------------------------");
         escola.listarProfessores();
+        System.out.println("----------------------------------------------------------------------------");
         turma1.listarTurma();
+        System.out.println("----------------------------------------------------------------------------");
+        disciplina1.exibirDetalhes();
 
     }
 }
