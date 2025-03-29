@@ -19,9 +19,12 @@ public class Turma {
     public void adicionarAlunoTurma(Aluno aluno) {alunosTurma.add(aluno);}
 
     public void listarTurma() {
-        System.out.println("Lista de Alunos na Turma:");
-        for (Aluno alunos : alunosTurma) {
-            System.out.println(alunos);
+        System.out.println("Turma: " + nomeTurma + " | Ano: " + anoLetivo);
+        System.out.println("Professor: " + professorTurma.getNomeProfessor());
+        System.out.println("Alunos matriculados:");
+
+        for (Aluno aluno : alunosTurma) {
+            System.out.println("- " + aluno.getNomeAluno());
         }
     }
 }
